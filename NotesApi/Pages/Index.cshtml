@@ -5,7 +5,64 @@
 }
 
 <button onclick="AddNote();" class="btn btn-sm btn-success">Add Note</button>
-
-<table id="tblNotes" class="display" style="width:100%">
+<br />
+<br />
+<table id="tblNotes" class="table table-sm cell-border" style="width:50%">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Note</th>
+            <th>Options</th>
+        </tr>
+    </thead>
     <tbody></tbody>
 </table>
+
+<div class="modal fade" id="noteNew" tabindex="-1" role="dialog">
+    <div class="modal-dialog" style="width: 600px;">
+        <div class="modal-content">
+
+            <!-- Modal Header -->
+            <div class="modal-header" style="display: block;">
+                <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                    <span class="sr-only">Close</span>
+                </button>
+                <h5 class="modal-title">
+                    Modify Note
+                </h5>
+            </div>
+
+            <!-- Modal Body -->
+            <div class="modal-body">
+                <form role="form">
+                    <div class="form-group">
+                        <div class="ui-widget">
+                            <table style="width: 100%;">
+                                <tr>
+                                    <td>
+                                        <div>
+                                            <textarea style="max-width: 100%;" class="form-control" id="noteNewInput" cols="40" rows="5"></textarea>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                            <input type="hidden" id="noteNewID" value="" />
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Modal Footer -->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-xs btn-default pull-left" data-dismiss="modal">
+                    Close
+                </button>
+                <button type="button" onclick="PutNote();" class="btn btn-xs btn-primary pull-left">
+                    Save
+                </button>
+            </div>
+
+        </div>
+    </div>
+</div>

@@ -29,7 +29,7 @@ namespace NotesApi.Controllers
             {
                 notes = new List<NoteModel>();
             }
-            return notes;
+            return notes.OrderBy(x => x.Id);
         }
 
         //You should be able to get a specific note.
