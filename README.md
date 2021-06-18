@@ -7,9 +7,13 @@ This is a simple app that has 3 parts to it.
 3)  When the app runs, it opens the main page where you can see the REST API in action through the web interface.
 
   -Get notes
+  
   -Get a note
+  
   -Add a note
+  
   -Delete a note
+  
   -Update a note
 
 Running the application:
