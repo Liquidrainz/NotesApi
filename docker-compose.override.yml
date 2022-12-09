@@ -4,7 +4,7 @@ services:
   notesapi:
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
-      - ASPNETCORE_URLS=https://+:443;http://+:80
+      - ASPNETCORE_URLS=https://+:443;http://+:8080
       - ASPNETCORE_HTTPS_PORT=5443
     ports:
       - "5106:8080"
